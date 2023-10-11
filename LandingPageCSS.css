@@ -8,7 +8,8 @@
 /*HEADER*/
 
 header.img{
-    overflow: hidden;
+    overflow: hidden; /*faz com que a logo não fique maior que o background na responsividade*/
+    min-width: 4rem;
 }
 
 .cabecalho{
@@ -39,7 +40,7 @@ header.img{
 
 nav a:hover{ /*passar o mouse nos itens e mudar a cor*/
     color: rgb(244,234,127);
-    text-decoration: underline; /**/
+    text-decoration: underline; 
 }
 
 
