@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Nunito:wght@700&family=Ubuntu:wght@500;700&display=swap');
+
+/*
+font-family: 'Inter', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+
+*{ /*deixando a página padrão*/
+    margin: 0;  /*distância da tag que estou usando para o exterior*/
+    padding: 0; /*distância da tag que estou usando para o conteúdo dela*/
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.cabecalho{
+    width:100%;
+    height:90%; /*usar porcentagem para responsividade*/
+    display: block;
+    background-color: rgba(31, 100, 197, 1);
+    box-shadow: rgba(0, 0, 0, 0.40);
+    display:flex;
+    flex-direction: row; /*direção da header, que no caso é na horizontal*/
+    align-items: center; /*alinha a imagem e os botões no centro da header*/
+    justify-content: space-around;
+    gap: 27.5625;
+}
+
+.cabecalho-logo-branca{
+    padding-left: 9.38rem;
+    padding-right: 73.1rem;
+    padding-top: 1.62rem;
+    padding-bottom: 1.62rem;
+}
+
+.cabecalho-menu-item{
+  
+}
+
+
+body{
+    font-size: 100%;
+} 
