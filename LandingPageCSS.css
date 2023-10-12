@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Nunito:wght@300;400;500;600;700&family=Roboto:wght@100;300;400&family=Ubuntu:wght@300;400;500;700&display=swap');
 
 *{ /*deixando a página padrão*/
     margin: 0;  /*distância da tag que estou usando para o exterior*/
     padding: 0; /*distância da tag que estou usando para o conteúdo dela*/
+    box-sizing: border-box;
     text-decoration: none;
 }
+
 
 /*HEADER*/
 
@@ -13,29 +16,30 @@ header.img{
 }
 
 .cabecalho{
-    width:100%;
-    height:90%; /*usar porcentagem para responsividade*/    
+    width:100vw; /*usar porcentagem para responsividade*/    
     background-color: rgba(31, 100, 197, 1);
     box-shadow: rgba(0, 0, 0, 0.40);
     display:flex;
+    padding: 1.3125rem 3rem 1.3125rem 3rem;
     align-items: center; /*alinha a imagem e os botões no centro da header*/
     justify-content: space-between;
 }
 
 .cabecalho-logo-branca{
-    padding-left: 9.38rem;
-    padding-top: 1.62rem;
-    padding-bottom: 1.62rem;
+    width: 5rem;
+    height: 6.125rem;
 }
 
 .cabecalho-menu-itens{
+    list-style: none;
     color: #f2f3f4;
+    display: fixed; /*faz com que a barra seja fixa*/
     font-size: 1.5rem;
-    font-family: ubuntu, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: normal;
-    padding-right: 1.88rem;
+    margin-right: 1.88rem;
 }
 
 nav a:hover{ /*passar o mouse nos itens e mudar a cor*/
@@ -44,42 +48,51 @@ nav a:hover{ /*passar o mouse nos itens e mudar a cor*/
 }
 
 
+
 /*BODY*/
+
+body{
+    overflow-x: hidden; /*tira o scroll horizontal (eixo x) */
+}
 
 /*BANNER*/
 
 .banner{
     width: 100%;
-    height: 50.6rem;
-    background: linear-gradient(180deg, rgba(0, 2, 5, 0.65),rgba(38, 38, 38, 0.65) 100%);
-    background-image: url(assets/img/Property\ 1=foto3.png);
+    height: 66.625rem;
+    background-image: url(assets/img/Group\ 13.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     align-items: center;
     display: flex;
     text-align: center;
-    filter: brightness(45%);
 }
 
 .underlined-text{
     color: #FFF;
     font-family: ubuntu, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 5.625rem;
     font-style: normal; 
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.5625rem;
     text-decoration: underline;
-    text-underline-offset: 0.6rem;
+    text-underline-offset: 1.5rem;
     color: #E0EB4F;
     filter: brightness(80%) inherit;
+    padding-top: 2rem;
 }
 
 .Ctext {
     color: white;
-    filter: brightness(80%) inherit;
+    z-index: 100;
 }
+
+
+/*NOSSOS SERVICOS*/
+
 
 
 /*FOOTER*/
@@ -88,17 +101,19 @@ footer{
 }
 
 .rodape{
-    height: 36.5rem;
+    height: 30rem;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+    align-items: stretch;
     color: white;
-    font-family: ubuntu, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 4.687rem;
+    padding-left: 4.3rem;
 }
 
 h2{
     color: #FFF;
-    font-family: ubuntu, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 2rem;
     font-size: normal;
     font-weight: 700;
@@ -107,10 +122,10 @@ h2{
 
 h5{
     color: #FFF;
-    font-family: ubuntu, sans-serif;
-    font-size: 1.25rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3rem;
     font-size: normal;
-    font-weight: 700;
+    font-weight:400;
     line-height: normal;
 }
 
@@ -128,24 +143,31 @@ h5{
     height: 4.68rem;
 }
 
-.loc{
-    margin-bottom: 8.5rem;
+
+.text-contatos{
+    padding-top: 1rem;
 }
 
-.contatos{
-    margin-bottom: 11rem;
+.text-contatos:hover{
+    color: rgba(31, 100, 197, 1);
+    transition: color 0.5s ease;
+    text-decoration: underline;
 }
 
 .texto-rodape{
-    color: white;
-    font-size: 1.5rem;
+    color: #FFF;
     text-align: center;
-    padding-top: 1.5rem;
-    padding-bottom: 4rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 3.125rem;
 }
 
 .linha-rodape{
     text-align: center;
+    padding-bottom: 1rem;
 }
 
 
