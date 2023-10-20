@@ -9,49 +9,59 @@
 
 
 /*HEADER*/
-
 header.img{
     overflow: hidden; /*faz com que a logo não fique maior que o background na responsividade*/
     min-width: 4rem;
 }
 
 .cabecalho{
-    width:100vw; /*usar porcentagem para responsividade*/    
+    display: flex;
+    width: 100%; /*usar porcentagem para responsividade*/    
     background-color: rgba(31, 100, 197, 1);
     box-shadow: rgba(0, 0, 0, 0.40);
-    display:flex;
-    padding: 1.3125rem 3rem 1.3125rem 3rem;
+    padding: 1.3125% 3% 1.3125% 3%;
     align-items: center; /*alinha a imagem e os botões no centro da header*/
     justify-content: space-between;
 }
 
 .cabecalho-logo-branca{
-    width: 5rem;
-    height: 6.125rem;
+    width: 5.25rem;
+    height: 6.475175rem;
+    flex-shrink: 0;
 }
 
-.cabecalho-menu-itens{
+.cabecalho-menu-itens li{
+    display: inline; /*faz com que a barra seja fixa*/
+    margin-right: 1.88rem;
     list-style: none;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+.cabecalho-menu-itens li a{
     color: #f2f3f4;
-    display: fixed; /*faz com que a barra seja fixa*/
     font-size: 1.5rem;
     font-family: 'Ubuntu', sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-right: 1.88rem;
 }
 
-nav a:hover{ /*passar o mouse nos itens e mudar a cor*/
+.cabecalho-menu-hamburguer{
+    cursor: pointer;
+    display: none;
+}
+
+nav li a:hover{ /*passar o mouse nos itens e mudar a cor*/
     color: rgb(244,234,127);
-    text-decoration: underline; 
+    text-decoration: underline;
+    padding: 1rem; 
     transition: color 0.5s ease;
 }
 
 
 
 /*BODY*/
-
 body{
     overflow-x: hidden; /*tira o scroll horizontal (eixo x) */
     min-width: 20rem;
@@ -62,8 +72,10 @@ body{
 body.img{
     width: 100%;
 }
-/*BANNER*/
 
+
+
+/*BANNER*/
 .banner{
     width: 100%;
     height: 66.625rem;
@@ -78,7 +90,6 @@ body.img{
 
 .underlined-text{
     color: #FFF;
-    font-family: ubuntu, sans-serif;
     font-family: 'Ubuntu', sans-serif;
     font-size: 5.625rem;
     font-style: normal; 
@@ -98,13 +109,11 @@ body.img{
 }
 
 
+
 /*NOSSOS SERVICOS*/
-
-
-
 .nossos-servicos{
     width: 100%;
-    height: 39rem;
+    height: 64rem;
     background-image: url(assets/img/fundo-azul\ 1.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -116,7 +125,7 @@ body.img{
 h3{
     color: #F2F3F4CC;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -126,7 +135,7 @@ h3{
 h1{
     color: #FFFFFF;
     font-family: 'Nunito', sans-serif;
-    font-size: 1.25rem;
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: 700;
     letter-spacing: 0.0625;
@@ -140,7 +149,10 @@ h1{
     justify-content:center;
     align-items: stretch;
     padding-top: 3.125rem;
+    border-radius: 1.25rem;
 }
+
+
 
 /*FOOTER*/
 footer{
@@ -153,7 +165,7 @@ footer{
     flex-direction: row;
     flex-wrap: wrap; /*faz com que o elemento vá pra baixo caso não caiba mais na mesma linha*/
     flex-flow: wrap;    
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 4.687rem 1rem;
     color: white;
@@ -187,8 +199,10 @@ p{
 
 .box-footer{
     flex: 0.0625 0.0625 18.75rem;    
+    width: 100%;
     height: 1,458125rem;
     margin: 2,1875rem;
+    flex-direction: center;
     display: inline-block;
     text-align: center;
     vertical-align: baseline;
@@ -198,8 +212,12 @@ p{
 
 .img-footer{
     padding: 1rem;
-    display: block;
+    display: flex;
     flex-direction: row;
+}
+
+.imagem-footer{
+    padding: 1rem;
 }
 
 .texto-loc{
@@ -230,8 +248,43 @@ p{
     padding-bottom: 1rem;
 }
 
-@media (max-width: 43.75rem){ /*responsividade*/
+
+
+@media (max-width: 64rem){ /*responsividade*/
     /*HEADER*/
+    nav .cabecalho-menu-hamburguer{ /*faz o menu hambúrguer aparecer*/
+        display: block;
+    }
+
+    nav ul{
+        position: fixed;
+        width: 60%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        transition: 0.3s ease-in;
+        background-color: #274AA3;
+    }
+
+    nav ul.active{ /*javascript pra ativar o menu*/
+        transform: translateX(0);
+    }
+
+    nav ul li{
+        padding: 0.625rem;
+    }
+
+
+
+    /*MAIN*/
+    main{
+        flex-direction: column;
+    }
 
 
     /*BANNER*/
@@ -258,5 +311,23 @@ p{
     h5{
         font-size: 1.3rem;
         font-weight: 400;
+    }
+
+
+    /*FOOTER*/
+    .bloco-box-footer{
+        display: block;
+        justify-content: auto;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .box-footer{
+        display: block;
+    }
+
+    .img-footer{
+        display: flex;
+        flex-direction: row;
     }
 }
