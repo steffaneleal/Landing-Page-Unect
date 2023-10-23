@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Nunito:wght@300;400;500;600;700&family=Roboto:wght@100;300;400&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{ /*deixando a página padrão*/
+    margin: 0;  /*distância da tag que estou usando para o exterior*/
+    padding: 0; /*distância da tag que estou usando para o conteúdo dela*/
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+/*HEADER*/
+header.img{
+    overflow: hidden; /*faz com que a logo não fique maior que o background na responsividade*/
+    min-width: 4rem;
+}
+
+.cabecalho{
+    display: flex;
+    width: 100%; /*usar porcentagem para responsividade*/    
+    background-color: rgba(31, 100, 197, 1);
+    box-shadow: rgba(0, 0, 0, 0.40);
+    padding: 1.3125% 3% 1.3125% 3%;
+    align-items: center; /*alinha a imagem e os botões no centro da header*/
+    justify-content: space-between;
+}
+
+.cabecalho-logo-branca{
+    width: 5.25rem;
+    height: 6.475175rem;
+    flex-shrink: 0;
+}
+
+.cabecalho-menu-itens li{
+    display: inline; /*faz com que a barra seja fixa*/
+    margin-right: 1.88rem;
+    list-style: none;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+.cabecalho-menu-itens li a{
+    color: #f2f3f4;
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.cabecalho-menu-hamburguer{
+    cursor: pointer;
+    display: none;
+}
+
+nav li a:hover{ /*passar o mouse nos itens e mudar a cor*/
+    color: #CFDD19;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    transition: color 0.5s ease;
+}
+
+
+
+/*BODY*/
+body{
+    overflow-x: hidden; /*tira o scroll horizontal (eixo x) */
+    min-width: 20rem;
+    max-width: 100%;
+    margin: auto;
+}
+
+body.img{
+    width: 100%;
+}
+
+
+
+/*BANNER*/
+.banner{
+    width: 100%;
+    height: 66.625rem;
+    background-image: url(assets/img/Group\ 13.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.underlined-text{
+    color: #FFF;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 5.625rem;
+    font-style: normal; 
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.5625rem;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 1.5rem;
+    color: #E0EB4F;
+    filter: brightness(80%) inherit;
+    padding-top: 2rem;
+}
+
+.Ctext {
+    color: white;
+    z-index: 100;
+}
+
+
+
+/*NOSSOS SERVICOS*/
+.nossos-servicos{
+    width: 100%;
+    height: 67.125rem;
+    background-image: url(assets/img/NOSSOS_SERVICOS/fundo-azul\ 1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+}
+
+.nossos-servicos h3{
+    color: #F2F3F4CC;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    padding-top: 3.13rem;
+    padding-left: 10.31rem;
+    padding-right: 67.63rem;
+}
+
+.vetor1-ns{
+    padding-left: 35rem;
+}
+
+.nossos-servicos h1{
+    width: 28.875rem;
+    color: #FFFFFF;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.0625;
+    margin-left: 10.31rem;
+    margin-right: 50.81rem;
+}
+
+.vetor2-ns{
+    padding-left: 9.1rem;
+}
+
+.cards-ns{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.card1-ns{
+    height: 29.6875rem;
+    width: 22.5rem;
+    display: block;
+    background-color: #2377ED;
+    border-radius: 1.25rem;    
+    margin-left: 9.38rem;
+    box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 0.25);
+    transition: background-color #5C9DF6 0.5s ease;
+}
+
+.card2-ns{
+    height: 29.6875rem;
+    width: 22.5rem;
+    display: block;
+    background-color: #2377ED;
+    border-radius: 1.25rem;
+    margin-left: 1.88rem;
+    margin-right: 1.88rem;
+    box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card3-ns{
+    height: 29.6875rem;
+    width: 22.5rem;
+    display: block;
+    background-color: #2377ED;
+    border-radius: 1.25rem;
+    margin-right: 9.38rem;
+    box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 0.25);
+}
+
+.icones-ns{
+    width: 3.75rem;
+    height: 3.75rem;
+    margin-left: 9.38rem;
+    margin-top: 3.13rem;
+    margin-right: 9.38rem;
+}
+
+.cards-ns h4{
+    padding-left: 5.56rem;
+    padding-right: 5.56rem;
+    padding-top: 1rem;
+    color: #F2F3F4;
+    font-family: Ubuntu;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.125rem;
+}
+
+.verde-ns{
+    color: #CFDD19;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    font-family: Ubuntu;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.1rem;
+}
+
+.cards-ns p{
+    width: 17.9375rem;
+    height: 11.5625rem;
+    margin-top: 1rem;
+    margin-left: 2.31rem;
+    margin-right: 2.25rem;
+    margin-bottom: 4.62rem;
+    color: #F2F3F4;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.0625rem;
+
+}
+
+.botao-ns{
+    background-color: #CFDD19;
+    box-shadow: 0px 25px 50px 0px rgba(207, 221, 25, 0.50);
+    width: 30.9375rem;
+    height: 5.5625rem;
+    border-radius: 1.25rem;
+    margin-top: 6rem;
+    margin-left: 37%;
+    cursor: pointer;
+}
+
+.botao-ns h6{
+    color: #505C2D;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.075rem;
+    padding: 1.88rem 5.62rem;
+}
+
+
+
+
+/*PORTFÓLIO*/
+.portfolio{
+    width: 100%;
+    height: 81.25rem;
+    background-image: url(assets/img/Porfólio/fundo-branco\ 1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+}
+
+.porfolio-h3{
+    color: rgba(31, 100, 197, 0.90);
+    font-family: Ubuntu;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.075rem;
+}
+
+
+
+/*FOOTER*/
+footer{
+    background-color: #333;
+}
+
+.rodape{
+    height: 30rem;
+    display: flex; /*essa tag vai ser o elemento container do flexbox*/
+    flex-direction: row;
+    flex-wrap: wrap; /*faz com que o elemento vá pra baixo caso não caiba mais na mesma linha*/
+    flex-flow: wrap;    
+    justify-content: space-around;
+    align-items: center;
+    padding: 4.687rem 1rem;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 4.687rem;
+    padding-left: 4.3rem;
+}
+
+.bloco-box-footer{
+    flex-wrap: wrap;
+    flex-grow: 3;
+    display: flex;
+    align-items: stretch;
+}
+
+.bloco-box-footer h2{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.bloco-box-footer h5{
+    font-size: 1.3rem;
+    font-weight: 400;
+
+}
+
+.bloco-box-footer p{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.box-footer{
+    flex: 0.0625 0.0625 18.75rem;    
+    width: 100%;
+    height: 1,458125rem;
+    margin: 2,1875rem;
+    flex-direction: center;
+    display: inline-block;
+    text-align: center;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.img-footer{
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.imagem-footer{
+    padding: 1rem;
+}
+
+.texto-loc{
+    width: auto;
+    height: auto;
+    padding: 1rem;
+}
+
+.text-contatos{
+    padding: 1rem;
+}
+
+.text-contatos:hover{
+    color: rgba(31, 100, 197, 1);
+    transition: color 0.5s ease;
+    text-decoration: underline;
+}
+
+.texto-rodape{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 3.125rem;
+}
+
+.linha-rodape{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+
+
+@media (max-width: 64rem){ /*responsividade*/
+    /*HEADER*/
+    nav .cabecalho-menu-hamburguer{ /*faz o menu hambúrguer aparecer*/
+        display: block;
+    }
+
+    nav ul{
+        position: fixed;
+        width: 80%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        transition: 0.3s ease-in;
+        background-color: #274AA3;
+    }
+
+    nav ul.active{ /*javascript pra ativar o menu*/
+        transform: translateX(0);
+    }
+
+    nav ul li{
+        padding: 0.625rem;
+    }
+
+
+
+    /*MAIN*/
+    main{
+        flex-direction: column;
+    }
+
+
+    /*BANNER*/
+    .banner{
+        height: 43.75rem;
+    }
+
+    .rodape{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-footer{
+        width: 100%;
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    h2 and p{
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+
+    h5{
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+
+
+    /*FOOTER*/
+    .bloco-box-footer{
+        display: block;
+        justify-content: auto;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .box-footer{
+        display: block;
+    }
+
+    .img-footer{
+        display: flex;
+        flex-direction: row;
+    }
+}

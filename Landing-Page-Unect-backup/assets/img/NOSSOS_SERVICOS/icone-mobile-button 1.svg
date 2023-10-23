@@ -1,0 +1,10 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icone-mobile-button 1" clip-path="url(#clip0_1565_437)">
+<path id="Vector" d="M37.5 0H22.5C15.6075 0 10 5.6075 10 12.5V47.5C10 54.3925 15.6075 60 22.5 60H37.5C44.3925 60 50 54.3925 50 47.5V12.5C50 5.6075 44.3925 0 37.5 0ZM32.5 52.5H27.5C26.12 52.5 25 51.38 25 50C25 48.62 26.12 47.5 27.5 47.5H32.5C33.88 47.5 35 48.62 35 50C35 51.38 33.88 52.5 32.5 52.5Z" fill="#F2F3F4"/>
+</g>
+<defs>
+<clipPath id="clip0_1565_437">
+<rect width="60" height="60" fill="white"/>
+</clipPath>
+</defs>
+</svg>
