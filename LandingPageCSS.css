@@ -114,16 +114,15 @@ body.img{
 /*NOSSOS SERVICOS*/
 .nossos-servicos{
     width: 100%;
-    height: 64rem;
-    background-image: url(assets/img/fundo-azul\ 1.svg);
+    height: 67.125rem;
+    background-image: url(assets/img/NOSSOS_SERVICOS/fundo-azul\ 1.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     align-items: center;
-    display:block;
 }
 
-h3{
+.nossos-servicos h3{
     color: #F2F3F4CC;
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.5rem;
@@ -131,26 +130,164 @@ h3{
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.8px;
+    padding-top: 3.13rem;
+    padding-left: 10.31rem;
+    padding-right: 67.63rem;
 }
 
-h1{
+.vetor1-ns{
+    padding-left: 35rem;
+}
+
+.nossos-servicos h1{
+    width: 28.875rem;
     color: #FFFFFF;
     font-family: 'Nunito', sans-serif;
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 700;
     letter-spacing: 0.0625;
-    position: absolute;
+    margin-left: 10.31rem;
+    margin-right: 50.81rem;
 }
 
-.balao-ns{
-    height: 22.5rem;
-    width: 17,1875rem;
+.vetor2-ns{
+    padding-left: 9.1rem;
+}
+
+.cards-ns{
     display: flex;
-    justify-content:center;
-    align-items: stretch;
-    padding-top: 3.125rem;
+    justify-content: center;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.card1-ns{
+    height: 29.6875rem;
+    width: 22.5rem;
+    display: block;
+    background-color: #2377ED;
+    border-radius: 1.25rem;    
+    margin-left: 9.38rem;
+}
+
+.card2-ns{
+    height: 29.6875rem;
+    width: 22.5rem;
+    display: block;
+    background-color: #2377ED;
     border-radius: 1.25rem;
+    margin-left: 1.88rem;
+    margin-right: 1.88rem;
+}
+
+.card3-ns{
+    height: 29.6875rem;
+    width: 22.5rem;
+    display: block;
+    background-color: #2377ED;
+    border-radius: 1.25rem;
+    margin-right: 9.38rem;
+}
+
+.icones-ns{
+    width: 3.75rem;
+    height: 3.75rem;
+    margin-left: 9.38rem;
+    margin-top: 3.13rem;
+    margin-right: 9.38rem;
+}
+
+.cards-ns h4{
+    padding-left: 5.56rem;
+    padding-right: 5.56rem;
+    padding-top: 1rem;
+    color: #F2F3F4;
+    font-family: Ubuntu;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.125rem;
+}
+
+.verde-ns{
+    color: #CFDD19;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    font-family: Ubuntu;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.1rem;
+}
+
+.cards-ns p{
+    width: 17.9375rem;
+    height: 11.5625rem;
+    margin-top: 1rem;
+    margin-left: 2.31rem;
+    margin-right: 2.25rem;
+    margin-bottom: 4.62rem;
+    color: #F2F3F4;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.0625rem;
+
+}
+
+.botao-ns{
+    background-color: #CFDD19;
+    box-shadow: 0px 25px 50px 0px rgba(207, 221, 25, 0.50);
+    width: 30.9375rem;
+    height: 5.5625rem;
+    border-radius: 1.25rem;
+    margin-top: 6rem;
+    margin-left: 37%;
+    cursor: pointer;
+}
+
+.botao-ns h6{
+    color: #505C2D;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.075rem;
+    padding: 1.88rem 5.62rem;
+}
+
+
+
+
+/*PORTFÓLIO*/
+.portfolio{
+    width: 100%;
+    height: 81.25rem;
+    background-image: url(assets/img/Porfólio/fundo-branco\ 1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+}
+
+.porfolio-h3{
+    color: rgba(31, 100, 197, 0.90);
+    font-family: Ubuntu;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.075rem;
 }
 
 
