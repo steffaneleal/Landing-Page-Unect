@@ -53,9 +53,9 @@ header.img{
 }
 
 nav li a:hover{ /*passar o mouse nos itens e mudar a cor*/
-    color: rgb(244,234,127);
+    color: #CFDD19;
     text-decoration: underline;
-    padding: 1rem; 
+    text-underline-offset: 0.5rem;
     transition: color 0.5s ease;
 }
 
@@ -85,7 +85,7 @@ body.img{
     background-position: center;
     align-items: center;
     display: flex;
-    text-align: center;
+
 }
 
 .underlined-text{
@@ -96,6 +96,7 @@ body.img{
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.5625rem;
+    text-align: center;
     text-decoration: underline;
     text-underline-offset: 1.5rem;
     color: #E0EB4F;
@@ -258,7 +259,7 @@ p{
 
     nav ul{
         position: fixed;
-        width: 60%;
+        width: 80%;
         height: 100%;
         top: 0;
         left: 0;
