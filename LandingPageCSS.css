@@ -290,15 +290,12 @@ body.img{
 /*PORTFÓLIO*/
 #portfolio{
     width: 100%;
-    height: 81.25rem;
+    height: 65.5rem;
     background-image: url(assets/img/Porfólio/fundo-branco\ 1.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
     background-position: center;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
     overflow: hidden;
 }
 
@@ -338,10 +335,14 @@ body.img{
     padding-right: 57.19rem;
 }
 
+.nossos-trabalhos .vetor1-ptfl{
+    padding-left: 20rem;
+}
+
 .cards-portfolio{
     width: 71.25rem;
     height: 114rem;
-    padding-top: 3.625rem;
+    padding-top: 12.5rem;
     justify-content: space-between;
     display: grid;
     grid-template-columns: repeat(auto-fill, max(45%));
@@ -354,6 +355,23 @@ body.img{
     height: 26.625rem;
     flex-shrink: 0;
 }
+
+.card-artus .artus-hover, .card-cesep .cesep-hover, .card-ecotech .ecotech-hover, .card-select .select-hover, .card-brick .brick-hover, .card-inception .inception-hover, .card-cotton .cotton-hover, .card-zampro .zampro-hover{
+    display: none;
+}
+
+.card-artus:hover .artus-normal, .card-cesep:hover .cesep-normal, .card-ecotech:hover .ecotech-normal, .card-select:hover .select-normal, .card-brick:hover .brick-normal, .card-inception:hover .inception-normal, .card-cotton:hover .cotton-normal, .card-zampro:hover .zampro-normal{
+    display: none;
+}
+
+.card-artus:hover .artus-hover, .card-cesep:hover .cesep-hover, .card-ecotech:hover .ecotech-hover, .card-select:hover .select-hover, .card-brick:hover .brick-hover, .card-inception:hover .inception-hover, .card-cotton:hover .cotton-hover, .card-zampro:hover .zampro-hover{
+    display:block;
+    margin-bottom: 1rem;
+    border-radius: 1.25rem;
+    transition: color 0.5s ease;
+}
+
+
 
 
 /*FOOTER*/
