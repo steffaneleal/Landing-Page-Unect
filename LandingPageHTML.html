@@ -15,6 +15,9 @@
         <!--título da página na aba-->
         <title>UNECT</title>
         
+        <!--ícone na aba-->
+        <link rel="shortcut icon" type="imagex/png" href="./images/icon.ico">
+
         <!--linkando o arquivo CSS-->
         <link 
         rel="stylesheet"
@@ -23,16 +26,16 @@
  
     <!--BODY-->
     <body> <!--coisas que vão aparacer para o usuário-->
-        <header class="cabecalho"> <!--Cabeçalho-->
+        <header id="cabecalho"> <!--Cabeçalho-->
             <!--logo da UNECT-->
             <img class="cabecalho-logo-branca" src="assets/img/HEADER/FullWhiteLogo 1.png" alt="Logo da Unect Jr."> <!--alt serve para ser um textinho caso a imagem não carregue-->
             
             <!--botões do cabeçalho-->
             <nav class="cabecalho-menu"> <!--botões de navegação (nav de navigation)-->
                 <ul class="cabecalho-menu-itens">
-                    <li><a href="">Início</a></li>
-                    <li><a href="">Serviços</a></li>
-                    <li><a href="">Portfólio</a></li>
+                    <li><a href="#header">Início</a></li>
+                    <li><a href="#nossos-servicos">Serviços</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
                     <li><a href="">Sobre Nós</a></li>
                     <li><a href="">Contato</a></li>
                 </ul>
@@ -45,7 +48,7 @@
         <main>
             <section> <!--divisão do main em seções-->
                 <!--BANNER-->
-                <div class="banner"> <!--divisão das seções-->
+                <div id="banner"> <!--divisão das seções-->
                     <span class="underlined-text">
                         <span class="Ctext">
                             Construindo
@@ -61,7 +64,7 @@
 
             <!--NOSSOS SERVIÇOS-->
             <section>
-                <div class="nossos-servicos">
+                <div id="nossos-servicos">
                     <h3>Nossos serviços</h3>
                     <div class="criamos">
                         <img class="vetor1-ns" src="assets/img/NOSSOS_SERVICOS/Vector.svg" alt="">
@@ -127,7 +130,9 @@
                         </div>
                     </div>
                     <div class="botao-ns">
-                        <h6 class="botao-ns-solicitar">SOLICITAR ORÇAMENTO</h6>
+                        <a href="https://api.whatsapp.com/message/AUAPOPINXWUYJ1?autoload=1&app_absent=0" target="_blank">
+                            <h6 class="botao-ns-solicitar">SOLICITAR ORÇAMENTO</h6>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -136,12 +141,38 @@
 
             <!--PORTFÓLIO-->
             <section>
-                <div class="portfolio">
-                    <h3>Portfólio</h3>
+                <div id="portfolio">
                     <div class="nossos-trabalhos">
+                        <h3>Portfólio</h3>
                         <img class="vetor1-ptfl" src="assets/img/Porfólio/Vector.svg" alt="">
                         <h1>Nossos Trabalhos</h1>
                         <img class="vetor2-ptfl" src="assets/img/Porfólio/Vector-1.svg" alt="">
+                    </div>
+                    <div class="cards-portfolio">
+                        <div class="card-artus">
+                            <img src="assets/img/Porfólio/artus - portfolio.svg" alt="">
+                        </div>
+                        <div class="card-cesep">
+                            <img src="assets/img/Porfólio/cesep - portfolio.svg" alt="">
+                        </div>
+                        <div class="card-ecotech">
+                            <img src="assets/img/Porfólio/eco tech - portfolio.svg" alt="">
+                        </div>
+                        <div class="card-select">
+                            <img src="assets/img/Porfólio/select - portfolio.svg" alt="">
+                        </div>
+                        <div class="card-brick">
+                            <img src="assets/img/Porfólio/brick - portfolio.svg" alt="">
+                        </div>
+                        <div class="card-inception">
+                            <img src="assets/img/Porfólio/inception3d - portfolio.svg" alt="">
+                        </div>
+                        <div class="cotton">
+                            <img src="assets/img/Porfólio/cotton - portfolio.svg" alt="">
+                        </div>
+                        <div class="zampro">
+                            <img src="assets/img/Porfólio/zampro - portfolio.svg" alt="">
+                        </div>
                     </div>
                 </div>
             </section>
