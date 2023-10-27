@@ -8,3 +8,10 @@ var onMenu = document.querySelector('nav .cabecalho-menu-hamburguer img');
 menuBar.addEventListener('click', function(){
     menu.classList.toggle('active'); /*faz com que o clique funcione*/
 })
+
+
+/*BOTÃO EXPANDIR PORTFOLIO*/
+
+document.getElementById('botao').addEventListener('click', function() {
+    document.querySelector('.conteudo').classList.toggle('aumentar');
+});
