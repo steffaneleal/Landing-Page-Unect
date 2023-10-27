@@ -4,7 +4,9 @@
     margin: 0;  /*distância da tag que estou usando para o exterior*/
     padding: 0; /*distância da tag que estou usando para o conteúdo dela*/
     box-sizing: border-box;
-    text-decoration: none;
+    text-decoration: none;~
+    width: 100%;
+    max-width: 100vw;
 }
 
 
@@ -17,16 +19,18 @@ header.img{
 #cabecalho{
     display: flex;
     width: 100%; /*usar porcentagem para responsividade*/    
+    height: 12.5rem;
     background-color: rgba(31, 100, 197, 1);
     box-shadow: rgba(0, 0, 0, 0.40);
-    padding: 1.3125% 3% 1.3125% 3%;
+    display: flex;
+    padding: 1rem 9.38rem;
     align-items: center; /*alinha a imagem e os botões no centro da header*/
     justify-content: space-between;
 }
 
 .cabecalho-logo-branca{
-    width: 5.25rem;
-    height: 6.475175rem;
+    width: 7.5rem;
+    height: 9.25025rem;
     flex-shrink: 0;
 }
 
@@ -63,9 +67,7 @@ nav li a:hover{ /*passar o mouse nos itens e mudar a cor*/
 
 /*BODY*/
 body{
-    overflow-x: hidden; /*tira o scroll horizontal (eixo x) */
-    min-width: 20rem;
-    max-width: 100%;
+    overflow-x: hidden; /*tira o scroll horizontal (eixo x)*/
     margin: auto;
 }
 
@@ -83,10 +85,16 @@ body.img{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    align-items: center;
     display: flex;
-
+    justify-content: center;
+    align-items: center;
 }
+
+.Ctext {
+    color: white;
+    z-index: 100;
+}
+
 
 .underlined-text{
     color: #FFF;
@@ -104,12 +112,6 @@ body.img{
     padding-top: 2rem;
 }
 
-.Ctext {
-    color: white;
-    z-index: 100;
-}
-
-
 
 /*NOSSOS SERVICOS*/
 #nossos-servicos{ /*usei # pq agora é uma id*/
@@ -119,6 +121,7 @@ body.img{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    justify-content: center;
     align-items: center;
 }
 
@@ -288,18 +291,14 @@ body.img{
 
 
 /*PORTFÓLIO*/
-#portfolio{
+.portfolio{
     width: 100%;
     height: 81.25rem;
     background-image: url(assets/img/Porfólio/fundo-branco\ 1.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
     background-position: center;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
-    overflow: hidden;
 }
 
 .nossos-trabalhos{
@@ -309,51 +308,14 @@ body.img{
 
 #portfolio h3{
     color: rgba(31, 100, 197, 0.90);
-    width: 6.9375rem;
-    height: 1.75rem;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: Ubuntu;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.075rem;
-    display: flex;
-    padding-top: 3.13rem;
-    padding-left: 10.31rem;
-    padding-right: 72.75rem;
 }
 
-#portfolio h1{
-    color: var(--unect-azul-1, #1F64C5);
-    width: 22.5rem;
-    height: 3.4375rem;
-    font-family: 'Nunito', sans-serif;
-    font-size: 2.5rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.125rem;
-    padding-top: 0.56rem;
-    padding-left: 10.31rem;
-    padding-right: 57.19rem;
-}
-
-.cards-portfolio{
-    width: 71.25rem;
-    height: 114rem;
-    padding-top: 3.625rem;
-    justify-content: space-between;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, max(45%));
-    gap: 3rem;
-}
-
-.card-artus, .card-cesep, .card-ecotech, .card-select, .card-brick, .card-inception, .card-cotton, .card-zampro{
-    padding-top: 3rem;
-    width: 33.8rem;
-    height: 26.625rem;
-    flex-shrink: 0;
-}
 
 
 /*FOOTER*/
@@ -452,7 +414,7 @@ p{
 
 
 
-@media (max-width: 64rem){ /*responsividade*/
+@media (max-width: 90rem){ /*responsividade*/
     /*HEADER*/
     nav .cabecalho-menu-hamburguer{ /*faz o menu hambúrguer aparecer*/
         display: block;
