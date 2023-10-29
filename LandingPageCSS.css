@@ -16,6 +16,8 @@
     left: 3.12rem;
     width: 4.375rem;
     height: 4.375rem;
+    background: none;
+    border: 1rem;
 }
 
 .whats{
@@ -24,6 +26,8 @@
     right: 1.87rem;
     width: 6.25rem;
     height: 6.25rem;
+    background: none;
+    border: 1rem;
 }
 
 /*HEADER*/
@@ -355,13 +359,16 @@ body.img{
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.125rem;
-    padding-top: 0.56rem;
     padding-left: 10.31rem;
-    padding-right: 57.19rem;
 }
 
-.nossos-trabalhos .vetor1-ptfl{
-    padding-left: 20rem;
+.vetor1-ptfl{
+    padding-left: 21.5rem;
+}
+
+.vetor2-ptfl{
+    padding-top: 1rem;
+    padding-left: 9rem;
 }
 
 .cards-portfolio{
@@ -433,8 +440,8 @@ body.img{
     padding-bottom: 14.3rem;
 }
 
-.dif-text{
-    display: flex;
+.dif-text, .dif-cards{
+    z-index: 2;
 }
 
 .dif h3{
@@ -445,6 +452,11 @@ body.img{
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.075rem;
+    padding-top: 2.97rem;
+}
+
+.dif-vetor1{
+    padding-left: 24.88rem;
 }
 
 .dif h1{
@@ -460,11 +472,17 @@ body.img{
 }
 
 .dif-cards{
+    display: flex;
+    gap: 4.69rem;
+    margin-top: 3.63rem;
+    padding-bottom: 10rem;
+}
+
+.dif-card1, .dif-card2, .dif-card3{
     width: 20.625rem;
     height: 25.1875rem;
     background-color: #4D4D4D;
     border-radius: 1.25rem;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -486,7 +504,8 @@ body.img{
 }
 
 .dif-cards p{
-    width: 15.0625rem;
+    width: 20.625rem;
+    height: 25.1875rem;
     color: rgba(255, 255, 255, 0.85);
     text-align: center;
     font-family: Ubuntu;
@@ -495,10 +514,44 @@ body.img{
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.05625rem;
+    padding-top: 3.06rem;
+    padding-left: 2.81rem;
+    padding-right: 2.75rem;
+    padding-bottom: 4.06rem;
 }
 
-.dif-cards p{
+.card1-suporte-img{
+    padding-top: 3rem;
+    padding-left: 8.44rem;
+    padding-right: 8.44rem;
+}
 
+.dif-card1 h2{
+    padding-top: 2.13rem;
+    padding-left: 5rem;
+}
+
+.card2-custo-img{
+    padding-top: 3rem;
+    padding-left: 8.44rem;
+    padding-right: 8.44rem;
+}
+
+
+.dif-card2 h2{
+    padding-top: 2.13rem;
+    padding-left: 5rem;
+}
+
+.card3-mej-img{
+    padding-top: 3rem;
+    padding-left: 8.44rem;
+    padding-right: 8.44rem;
+}
+
+.dif-card3 h2{
+    padding-top: 2.13rem;
+    padding-left: 5rem;
 }
 
 
@@ -511,7 +564,7 @@ body.img{
     background-size: cover;
     background-size: cover; 
     background-position: center;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     overflow: hidden;
 }
@@ -531,6 +584,14 @@ body.img{
     letter-spacing: 0.075rem;
     padding-left: 9.37rem;
     padding-top: 3rem;
+}
+
+.conts-vetor1{
+    padding-left: 52rem;
+}
+
+.conts-vetor2{
+    padding-left: 8.5rem;
 }
 
 .conts h1{
@@ -604,17 +665,17 @@ body.img{
 }
 
 
+
 /*SOBRE NÓS*/
 #sobre-nos{
     width: 100%;
     height: 46.75rem;
-    background-image: url(assets/img/SOBRE_NOS/time-placeholder\ 3.svg);
+    background-image: url(assets/img/SOBRE_NOS/Group\ 14.svg);
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center;
     display: flex;
-    justify-content: space-between;
-    padding: 9.38rem;
+    justify-content: space-around;
 }
 
 .sn-left h3{
@@ -626,10 +687,15 @@ body.img{
     line-height: normal;
     letter-spacing: 0.075rem;
     padding-top: 3.13rem;
+    padding-left: 10.25rem;
+}
+
+.sn-vetor1{
+    padding-left: 40rem;
 }
 
 .sn-left h1{
-    width: 30.0625rem;
+    width: 32rem;
     height: 6.87rem;
     color: var(--unect-branco, #F2F3F4);
     font-family: Nunito;
@@ -638,6 +704,11 @@ body.img{
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.125rem;
+    margin-left: 10.25rem;
+}
+
+.sn-vetor2{
+    padding-left: 10rem;
 }
 
 .sn-left p{
@@ -650,10 +721,11 @@ body.img{
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.15rem;
-    padding-bottom: 10.62rem;
+    padding-top: 3rem;
+    margin-left: 9.37rem;
 }
 
-.img-sn h2{
+.sn-right h2{
     color: #FFF;
     font-family: Ubuntu;
     font-size: 1.5rem;
@@ -661,16 +733,24 @@ body.img{
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.15rem;
+    padding-top: 7.5rem;
+    padding-left: 40rem;
 }
 
-.img-sn img{
+.sn-line{
+    padding-left: 40rem;
+}
+
+.sn-img{
     display: flex;
-    width: 31.25rem;
+    width: 60rem;
     height: 25.39063rem;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0;
+    padding-left: 13rem;
+    padding-top: 1.25rem;
 }
+
 
 
 
@@ -685,7 +765,88 @@ body.img{
     align-items: center;
 }
 
+.ctts-left h3{
+    width: 6.9375rem;
+    height: 1.75rem;
+    color: rgba(242, 243, 244, 0.80);
+    font-family: Ubuntu;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.075rem;
+    padding-left: 10.25rem;
+    padding-top: 3.13rem;
+}
 
+.ctts-vetor1{
+    padding-left: 40rem;
+}
+
+.ctts-left h1{
+    width: 35rem;
+    height: 4.0625rem;
+    color: var(--unect-branco, #F2F3F4);
+    font-family: Nunito;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.15rem;
+    margin-left: 9.87rem;
+}
+
+.ctts-vetor2{
+    padding-left: 8.5rem;
+}
+
+
+.ctts-left h2{
+    width: 26.25rem;
+    height: 2.3125rem;
+    color: #FFF;
+    font-family: Ubuntu;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.1rem;
+    margin-left: 9.37rem;
+    margin-top: 3.13rem;
+}
+
+.ctts-span{
+    color: #CFDD19;
+    font-family: Ubuntu;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.1rem;
+}
+
+.ctts-left p{
+    width: 31.875rem;
+    height: 6.125rem;
+    color: #FFF;
+    font-family: Ubuntu;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.0625rem;
+    margin-top: 3rem;
+    margin-left: 9.37rem;
+}
+
+.ctts-line{
+    padding-top: 1.81rem;
+    margin-left: 9.37rem;
+}
+
+.ctts-redes{
+    display: flex;
+}
 
 
 /*FOOTER*/
