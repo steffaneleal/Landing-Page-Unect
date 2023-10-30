@@ -11,7 +11,29 @@ menuBar.addEventListener('click', function(){
 
 
 /*BOTÃO EXPANDIR PORTFOLIO*/
+const card = document.querySelector(".cards-portfolio");
+const cardsInitialHeight = card.clientHeight;
+const overflow = document.querySelector(".overflow");
+const toggle = document.querySelector(".toggle");
 
-document.getElementById('botao').addEventListener('click', function() {
-    document.querySelector('.conteudo').classList.toggle('aumentar');
-});
+button.addEventListener("click", initButton);
+
+function initToggle(e){
+    card.style.maxHeight = 
+    e.target.dataset.state === "more"
+    ? '${card.scrollHeight}rem'
+    : '${cardInitialHeight}rem';
+
+    e.target.setAttribute(
+        "data-state",
+        e.target.dataset.state === "more" ? "less" : "more"
+    );
+
+    e.target.innerHTML = 
+    e.target.dataset.state === "more" ? "Show more" : "Show Less";
+    
+    overflow.setAttribute(
+        "data-state",
+        e.target.dataset.state === "more" ? "visible" : "hidden"
+    );
+}

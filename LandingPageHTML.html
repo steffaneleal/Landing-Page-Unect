@@ -197,9 +197,11 @@
                                 <img src="assets/img/Porfólio/zampro portfolio hover.svg" alt="" class="zampro-hover">
                             </a>
                         </div>
+                        
+                        <span class="overflow" data-state="visible" aria-hidden="true"></span>
                     </div>
                     <div class="bt-mostrar-mais">
-                        <button id="botao-pt-expandir">
+                        <button  class="botao-pt-expandir" data-state="more">
                             <img src="assets/img/Porfólio/bt-expandir-portfolio.svg" alt="">
                         </button>
                     </div>  
@@ -340,9 +342,11 @@
                             <img class="ctts-line" src="assets/img/CONTATOS/Line 7.svg" alt="">
                             <div class="ctts-redes">
                                 <h2 class="ctts-h2-redes">Nossas redes sociais</h2>
-                                <img src="assets/img/CONTATOS/instangram(1).svg" alt="" class="ctts-insta">
-                                <img src="assets/img/CONTATOS/Linkedin.svg" alt="" class="ctts-linkedin">
-                                <img src="assets/img/CONTATOS/Facebook.svg" alt="" class="ctts-fb">
+                                <a href="https://www.instagram.com/unectjr/"><img  class="ctts-rede" src="assets/img/CONTATOS/instangram(1).svg" alt="" class="ctts-insta"></a>
+                                <br>
+                                <a href="https://br.linkedin.com/company/unect-jr."><img class="ctts-rede" src="assets/img/CONTATOS/Linkedin.svg" alt="" class="ctts-linkedin"></a>
+                                <br>
+                                <a href="https://www.facebook.com/UnectJr"><img class="ctts-rede" src="assets/img/CONTATOS/Facebook.svg" alt="" class="ctts-fb"></a>
                             </div>
                         </div>
                         <div class="ctts-right">
@@ -350,15 +354,15 @@
                                 <h1>Nos mande uma mensagem e retornaremos em breve!</h1>
                                     <div class="ctts-balao-input">
                                         <label>Nome *</label>
-                                        <input type="text" name="nome" id="nome" required>
+                                        <input type="text" name="nome" id="nome" placeholder="Nome completo" required>
                                     </div>
                                     <div class="ctts-balao-input">
                                         <label>Email *</label>
-                                        <input type="email" name="email" id="email" required>
+                                        <input type="email" name="email" id="email" placeholder="Ex.: email@email.com" required>
                                     </div>
                                     <div class="ctts-balao-mensagem">
                                         <label>Mensagem *</label>
-                                        <input type="text" name="mensagem" id="mensagem" required>
+                                        <input type="text" name="mensagem" id="mensagem" placeholder="Digite uma mensagem" required>
                                     </div>
                                     <div class="ctts-form-termos">
                                         <input type="checkbox" name="termos" id="termos" value="termos" required>
@@ -369,7 +373,7 @@
                                         <img src="assets/img/CONTATOS/send button.svg" alt="">
                                     </button>
                                 </div>
-                        </form>
+                            </form>
                         </div>
                         <img src="" alt="">
                     </div>
@@ -427,6 +431,7 @@
                 </footer>
 
             
+            <!--BOTÕES FIXOS-->
             <div class="botoes-fixos">
                 <a href="#cabecalho">
                     <button class="voltar-topo">
