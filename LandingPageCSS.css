@@ -12,12 +12,12 @@
 /*BOTÕES FIXOS*/
 .voltar-topo{
     position: fixed;
-    bottom: 15rem;
+    bottom: 10rem;
     left: 3.12rem;
     width: 4.375rem;
     height: 4.375rem;
     background: none;
-    border: 1rem;
+    border: 0rem;
 }
 
 .whats{
@@ -27,7 +27,7 @@
     width: 6.25rem;
     height: 6.25rem;
     background: none;
-    border: 1rem;
+    border: 0rem;
 }
 
 /*HEADER*/
@@ -310,7 +310,27 @@ body.img{
     padding: 1.88rem 5.62rem;
 }
 
+.botao-ns:hover{
+    width: 32.2875rem;
+    height: 5.5625rem;
+    padding: 1.875rem 6.25rem;
+    justify-content: center;
+    align-items: center;
+    gap: 3.125rem;
+    border-radius: 1.25rem;
+    background: #E8F078;
+}
 
+.botao-ns:hover h6{
+    color: #505C2D;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.075rem;
+    padding: 1.88rem 5.62rem;
+}
 
 
 /*PORTFÓLIO*/
@@ -408,6 +428,8 @@ body.img{
 .bt-mostrar-mais{
     justify-self: center;
     align-self: flex-end;
+    background: none;
+    border: 0rem;
 }
 
 .aumentar {
@@ -659,6 +681,30 @@ body.img{
     padding: 1.62rem 4.38rem;
 }
 
+.bt-conts:hover{
+    display: flex;
+    width: 29.0625rem;
+    height: 5.3125rem;
+    padding: 1.625rem 4.375rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 1.25rem;
+    background: #CFDD19;
+    box-shadow: 0px 25px 50px 0px rgba(207, 221, 25, 0.50);
+    transition: color 2s ease;
+}
+
+.bt-conts h6:hover{
+    color: var(--unect-verde-escuro, #505C2D);
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.12rem;
+}
+
 .conts-livro{
     padding-right: 9.38rem;
     padding-top: 1.19rem;
@@ -762,7 +808,11 @@ body.img{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    align-items: center;
+}
+
+.ctts{
+    display: flex;
+    justify-content: space-around;
 }
 
 .ctts-left h3{
@@ -776,7 +826,7 @@ body.img{
     line-height: normal;
     letter-spacing: 0.075rem;
     padding-left: 10.25rem;
-    padding-top: 3.13rem;
+    margin-top: 3.13rem;
 }
 
 .ctts-vetor1{
@@ -801,7 +851,7 @@ body.img{
 }
 
 
-.ctts-left h2{
+.ctts-h2-ajuda{
     width: 26.25rem;
     height: 2.3125rem;
     color: #FFF;
@@ -835,18 +885,173 @@ body.img{
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.0625rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-left: 9.37rem;
 }
 
 .ctts-line{
-    padding-top: 1.81rem;
     margin-left: 9.37rem;
 }
 
-.ctts-redes{
-    display: flex;
+.ctts-h2-redes{
+    width: 31rem;
+    color: #FFF;
+    font-family: Ubuntu;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.1rem;
+    margin-top: 1.88rem;
+    padding-left: 9.37rem;
 }
+
+.ctts-redes{
+    display: block;
+    width: 31rem;
+}
+
+.ctts-form{
+    width: 35rem;
+    height: 37.6875rem;
+    background-color: white;
+    border-radius: 1.25rem;
+    box-shadow: 0rem 0.375rem 0.375rem 0rem, rgba(0, 0, 0, 0.25);
+    margin-top: 5.87rem;
+    margin-right: 9.38rem;
+    margin-bottom: 5.25rem;
+}
+
+.ctts-form h1{
+    width: 25rem;
+    color: var(--unect-azul-corpo-texto, #233D62);
+    font-family: Ubuntu;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.075rem;
+    padding-top: 3.38rem;
+    padding-left: 3.12rem;
+}
+
+.ctts-balao-input{
+    color: var(--unect-azul-1, #1F64C5);
+    font-family: Ubuntu;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.05rem;
+}
+
+.ctts-balao-input{
+    width: 32rem;
+    height: 3.75rem;
+    margin: 0.3125rem;
+    position: relative;
+    padding-top: 2.06rem;
+    padding-left: 3.13rem;
+    color: #1F64C5;
+}
+
+.ctts-balao-input label {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: white;
+    padding-top: 2.06rem;
+    padding-left: 3.13rem;
+}
+
+.ctts-balao-input input {
+    width: calc(100% - 1.25rem);
+    padding: 0.625rem;
+    border: 0.12rem solid #ccc;
+    border-radius: 0.5rem; /* Borda arredondada */
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* Sombra */
+    font-size: 1rem;
+}
+
+.ctts-balao-mensagem{
+    width: 32rem;
+    height: 9.5625rem;
+    margin: 0.3125rem;
+    position: relative;
+    padding-top: 2.06rem;
+    padding-left: 3.13rem;
+    color: #1F64C5;
+}
+
+.ctts-balao-mensagem{
+    color: var(--unect-azul-1, #1F64C5);
+    font-family: Ubuntu;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.05rem;
+}
+
+.ctts-balao-mensagem label {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: white;
+    padding-top: 2.06rem;
+    padding-left: 3.13rem;
+}
+
+.ctts-balao-mensagem input {
+    width: calc(100% - 1.25rem);
+    padding: 0.625rem;
+    border: 0.12rem solid #ccc;
+    border-radius: 0.5rem; /* Borda arredondada */
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* Sombra */
+    font-size: 1rem;
+    height: 9.5625rem;
+}
+
+.ctts-form-termos{
+    color: #5487D0;
+    font-family: Ubuntu;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.0375rem;
+    padding-top: 3rem;
+}
+
+.ctts-form-termos{
+    padding-left: 3.13rem;
+}
+
+.ctts-form-button{
+    width: 9.8125rem;
+    height: 3.625rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F64C5;
+    border-radius: 0.625rem;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.15);
+    color: #B6E9FA;
+    font-family: Ubuntu;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.075rem;
+    align-items: center;
+    margin-left: 22.06rem;
+}
+
+.ctts-form-button:hover{
+    background-color: #5C9DF6;
+    transition: color 1s ease;
+}
+
 
 
 /*FOOTER*/
@@ -874,6 +1079,7 @@ footer{
     flex-grow: 3;
     display: flex;
     align-items: stretch;
+    padding-left: 15rem;
 }
 
 h2{
@@ -923,6 +1129,7 @@ p{
 
 .text-contatos{
     padding: 1rem;
+    color: white;
 }
 
 .text-contatos:hover{
@@ -946,6 +1153,8 @@ p{
 
 
 @media (max-width: 64rem){ /*responsividade*/
+
+
     /*HEADER*/
     nav .cabecalho-menu-hamburguer{ /*faz o menu hambúrguer aparecer*/
         display: block;
